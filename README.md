@@ -4,7 +4,7 @@ Single-file static HTML adapted from the provided source PDF.
 
 ## Files
 
-- `version-1-classic.html`
+- `index.html`
 
 ## Notes
 
