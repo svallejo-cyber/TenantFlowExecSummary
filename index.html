@@ -37,6 +37,20 @@
       box-shadow: 0 14px 42px rgba(15, 31, 46, 0.08);
       overflow: hidden;
     }
+    .top-visual {
+      padding: 28px 42px;
+      background: linear-gradient(180deg, #f7fbff 0%, #eef5fb 100%);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .top-visual img {
+      width: min(220px, 55vw);
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 8px 20px rgba(15, 49, 79, 0.2));
+    }
     header {
       padding: 34px 42px 28px;
       background: linear-gradient(110deg, #133d59 0%, #0f5b8d 56%, #1573a8 100%);
@@ -114,6 +128,7 @@
       background: #fafcfd;
     }
     @media (max-width: 760px) {
+      .top-visual { padding-left: 20px; padding-right: 20px; }
       header, main, footer { padding-left: 20px; padding-right: 20px; }
       .grid { grid-template-columns: 1fr; }
       .table { font-size: .9rem; }
@@ -122,6 +137,9 @@
 </head>
 <body>
   <article class="page">
+    <div class="top-visual">
+      <img src="assets/tenantflow-desktop-icon.png" alt="Icono de la aplicación TenantFlow" />
+    </div>
     <header>
       <div class="kicker">Documento para comité directivo</div>
       <h1>IA práctica para negocio no técnico</h1>
