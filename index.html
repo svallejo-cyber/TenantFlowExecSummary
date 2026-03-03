@@ -38,18 +38,38 @@
       overflow: hidden;
     }
     .top-visual {
-      padding: 28px 42px;
+      padding: 20px 42px;
       background: linear-gradient(180deg, #f7fbff 0%, #eef5fb 100%);
       border-bottom: 1px solid var(--line);
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      gap: 14px;
     }
     .top-visual img {
-      width: min(220px, 55vw);
+      width: min(110px, 28vw);
       height: auto;
       display: block;
       filter: drop-shadow(0 8px 20px rgba(15, 49, 79, 0.2));
+    }
+    .project-intro {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .project-name {
+      margin: 0;
+      font-size: 1rem;
+      letter-spacing: .08em;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #133d59;
+    }
+    .project-desc {
+      margin: 0;
+      font-size: .86rem;
+      color: #335369;
+      max-width: 520px;
     }
     header {
       padding: 34px 42px 28px;
@@ -128,7 +148,7 @@
       background: #fafcfd;
     }
     @media (max-width: 760px) {
-      .top-visual { padding-left: 20px; padding-right: 20px; }
+      .top-visual { padding-left: 20px; padding-right: 20px; align-items: flex-start; }
       header, main, footer { padding-left: 20px; padding-right: 20px; }
       .grid { grid-template-columns: 1fr; }
       .table { font-size: .9rem; }
@@ -139,6 +159,10 @@
   <article class="page">
     <div class="top-visual">
       <img src="assets/tenantflow-desktop-icon.png" alt="Icono de la aplicación TenantFlow" />
+      <div class="project-intro">
+        <p class="project-name">TENANTFLOW</p>
+        <p class="project-desc">Automatiza la captura, control y comunicación de facturas de suministros para gestión de alquileres.</p>
+      </div>
     </div>
     <header>
       <div class="kicker">Documento para comité directivo</div>
